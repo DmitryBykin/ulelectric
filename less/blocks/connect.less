@@ -1,0 +1,63 @@
+.connect {
+
+	&__wrapper {
+		max-width: @max-width;	
+		margin: 0 auto;
+		padding: 10px;
+
+		display: flex;
+		flex-direction: column;	
+		align-items: center;
+	}
+	
+	&__messengers {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+
+	}
+
+	&__tel {
+		fill: blue;
+	}
+
+	&__tel, &__messengers_whatsapp, &__messengers_viber {
+	  display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	&__messengers_whatsapp {
+		color: #51C85D;
+	}
+
+	&__messengers_viber {
+		color: #7F4DA0;
+	}	
+
+	&__messengers_icon {
+		width: 40px;
+		height: 40px;
+		margin: 0 0 0 10px;
+	}
+
+}
+
+@media @tablets {
+	
+	.connect {
+		
+		&__messengers {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 15px;
+		}	
+
+		&__messengers_icon {			
+			margin-right: 10px;
+		}	
+
+	}	
+
+}
