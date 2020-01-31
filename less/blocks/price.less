@@ -1,0 +1,50 @@
+.price {
+	
+	&__wrapper {
+		max-width: @max-width;			
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	&__header {
+		text-align: center;
+	}
+
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	&__item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 8px;
+	}
+
+	&__splitter {
+		border-bottom: 2px dotted blue;
+		flex-grow: 2;
+	}
+
+	&__description {
+		//width: 30%;
+	}
+
+	&__amount {
+		//border: 1px solid red;
+	}
+}
+
+@media @middle-tablets {
+
+	.price {
+		&__wrapper {
+			width: 70%;
+		}
+
+	}
+
+}
